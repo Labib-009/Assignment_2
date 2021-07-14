@@ -1,0 +1,156 @@
+/* ------
+font
+ ----------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header section */
+
+header{
+display: flex;
+background-color: rgba(171, 26, 190, 0.952);
+}
+.header-title{
+    Width :100%;
+    padding: 207px 51px 240px 156px;
+}
+.header-title h1{
+    
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+}
+/* ---Button---- */
+.header-title button{
+    background-color: #E02C6D;
+    color: #ffffff;
+    height: 44px;
+    width: 168px;
+    transition: 0.4s;
+}
+.header-title button:hover{
+    transform: scale(1.2);
+}
+
+
+.header-banner img{
+   width: 600px;
+   height: 500px;
+   padding: 153px 140.99px 86px 51px;
+
+}
+.header-banner:hover{
+    transform: scale(1.2);
+    transform: rotate(45deg);
+
+} 
+
+/* Main Section */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* background_part */
+.container{
+background-color: #ffffff;
+width: 1050px;
+padding-top:30px;
+margin-top: 21px;
+border-radius: 5px;
+
+}
+/* Players infos and bio */
+
+.player-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    
+}
+.players{
+    border: 2px solid rgba(0, 0, 0, 0.034);
+    padding: 5%;
+    border-radius: 5px;
+    height: 474px;
+    transition: 0.4s;
+
+}
+.players:hover{
+    transform: scale(1.1);
+}
+ .player-image img{
+    width: 298px;
+    height: 254px;
+
+}
+
+/* ---Footer Section----- */
+
+.footer-info {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+/* Media queries 
+*/
+/* Mobile Devices
+ */
+ 
+@media only screen and (max-width:688px)
+and (min-width:360px){
+ 
+.header{
+   width: 10%;
+ 
+    }
+
+.players{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+
+   .footer-info{
+   
+       flex-direction: column;
+   }
+   
+   
+    }
+    /* tablet devices */
+    /* @media only screen and(min-width:688px)and (max-width:992px){
+    
+       .container{
+      width: 100%;
+      
+       }
+       
+          .x{
+      grid-template-columns: repeat(2,1fr);
+      
+       }
+      .players{
+      
+          flex-direction: column;
+      }
+      
+      
+       }
+     */
+    */
+
+
